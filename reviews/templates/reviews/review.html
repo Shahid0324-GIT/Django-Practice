@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        {% csrf_token %}
+        <label for='full-name'>Full Name:</label>
+
+        <div style="margin: 1rem 0;"></div>
+
+        <input id="full-name" type="text" name="full-name" placeholder="John Doe" />
+
+        <div style="margin: 1rem 0;"></div>
+        <label for='movie'>Movie Name:</label>
+
+        <input id="movie" type="text" name="movie" placeholder="Marvel's Avengers" />
+
+        <div style="margin: 1rem 0;"></div>
+        <label for='review'>Your Review:</label>
+
+
+        <div style="margin: 1rem 0;"></div>
+
+        <textarea rows="10" cols="70" id="review" name="review"></textarea>
+
+        <div style="margin: 1rem 0;"></div>
+
+        <button type='submit'>Send</button>
+    </form>
+</body>
+</html>

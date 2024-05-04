@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reviews</title>
+</head>
+<body>
+    <h1> Thank You! </h1>
+    <div>
+        <h2>All Reviews: </h2>
+        {% for review in reviews %}
+            <h3>{{ review.full_name }}</h3>
+            <h4>{{ review.movie}}</h4>
+            <p>{{ review.user_review }}</p>
+        {% endfor %}
+    </div>
+    <a href="/">Back to review page </a>
+</body>
+</html>
